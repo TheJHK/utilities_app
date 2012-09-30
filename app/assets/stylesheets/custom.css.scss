@@ -652,8 +652,9 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 10px;
 }
 
 h4 {
@@ -3622,9 +3623,12 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav {
-  margin-bottom: 20px;
+  margin-bottom: 0;
   margin-left: 0;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 0;
 }
 
 .nav > li > a {
@@ -4234,6 +4238,9 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav.pull-right {
   float: right;
+  position:relative;
+  bottom:60px;
+  
 }
 
 .navbar .nav > li {
@@ -5575,7 +5582,7 @@ a.badge:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  background-color: #eeeeee;
+  background-color: #D0D0D0;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -5584,14 +5591,16 @@ a.badge:hover {
 .hero-unit h1 {
   margin-bottom: 0;
   font-size: 60px;
+  text-shadow: 2px 3px #FFFFFF;
   line-height: 1;
   letter-spacing: -1px;
   color: inherit;
+  padding: 10px;
 }
 
 .hero-unit p {
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 30px;
   color: inherit;
 }
@@ -5684,3 +5693,10 @@ span#logoimg {
 	width: 100%;
 	height: 100%;
 }
+
+/* Temp plz delete */ 
+body {
+	background: #1A1A1A;
+	align: center;
+}
+img {   display: block;   margin-left: auto;   margin-right: auto; }

@@ -3,7 +3,10 @@ UtilitiesApp::Application.routes.draw do
 
 	resources :users
 	
-	root to: 'static_pages#home'
+	# for real dev, use this as home:
+	# root to: 'static_pages#home'
+	
+	root to: 'static_pages#beta'
 	
 	match '/signup', to: 'users#new'
 	match '/zip/:zip_code', to: 'plans#index'

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Company name:</b>
+  <%= @plan.company_name %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @plan.zip %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @plan.details %>
+</p>
+
+<p>
+  <b>Plan type:</b>
+  <%= @plan.plan_type %>
+</p>
+
+<p>
+  <b>Extended details:</b>
+  <%= @plan.extended_details %>
+</p>
+
+
+<%= link_to 'Edit', edit_plan_path(@plan) %> |
+<%= link_to 'Back', plans_path %>

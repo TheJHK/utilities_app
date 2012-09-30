@@ -1,12 +1,19 @@
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "utilities app", root_path, id: "logo" %>
+		<span class="logoimg">
+			<%= link_to image_tag("logo.jpg", alt: "U"), root_path %> 
+		</span>
+	  <!-- <%= link_to "tilified", root_path, id: "logo" %> test -->
+	  
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Home",    root_path %></li>
-          <li><%= link_to "Sign in", '#' %></li>
-        </ul>
+          
+		  <!--Dear future, probably should think about adding this sign in later -->
+		  <li><%= link_to "Sign in", '#' %></li>
+        
+		</ul>
       </nav>
     </div>
   </div>

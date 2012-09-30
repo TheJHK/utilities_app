@@ -1,9 +1,26 @@
+
+
 <div class="center hero-unit">
-  <h1>Welcome to the Utilities App</h1>
 
-  <h2>
-    This is the home page.
-  </h2>
+	<% if flash[:success] %>
+	<%= flash[:success] %>
+	<% end %>
 
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+  <h1>Welcome to Utilified!</h1>
+    <h2>
+		<%= link_to "Sign up now!", '/signup', class: "btn btn-orange" %>
+	</h2>
+	
+	<p>
+	<div>
+		
+		
+		Your Zip Code: 
+		<div id="search"><%= text_field "plan", "zip", "size" => 8 %></div>
+		
+		<!-- This needs to have a search function, so please edit Mr/Ms. Future -->
+		<%= link_to "Search!", '/preferences', class: "btn btn-green" %>
+
+
 </div>
+</p>

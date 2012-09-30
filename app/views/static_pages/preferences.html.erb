@@ -1,0 +1,20 @@
+<% provide(:title, 'Preferences') %>
+
+<p>
+	In order for us to provide you
+	with the best possible options,
+	we just need to ask you some fun 
+	questions! Ready? Set? Go!
+</p>
+
+<p>
+<ul class="check_form">
+	<div><%= check_box "plan", "plan_type", {}, "yes_phone", "no_phone" %> Phone, because I need to talk on it.</div>
+	<div><%= check_box "plan", "plan_type", {}, "yes_internet", "no_internet" %> Internet, because I love the internet.</div>
+	<div><%= check_box "plan", "plan_type", {}, "yes_cable", "no_cable" %> Cable, because T.V. is great.</div>
+	<div><%= check_box "plan", "plan_type", {}, "yes_electricity", "no_electricity" %> Electricity, because at night it's dark.</div>
+</ul>
+</p>
+<%= link_to "Submit!", '/zip/:zip_code', class: "btn btn-green" %>
+
+</div>

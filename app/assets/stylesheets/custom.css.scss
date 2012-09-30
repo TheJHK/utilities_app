@@ -4014,9 +4014,8 @@ input[type="submit"].btn.btn-mini {
 .navbar {
   *position: relative;
   *z-index: 2;
-  height: 70px;
   margin-bottom: 20px;
-  overflow: hidden;
+  overflow: visible;
   color: #555555;
 }
 
@@ -4053,7 +4052,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 0px 30px 15px;
+  padding: 15px 30px 15px;
   margin-left: -20px;
   font-size: 30px;
   font-weight: 200;

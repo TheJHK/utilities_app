@@ -6,10 +6,10 @@ UtilitiesApp::Application.routes.draw do
 	root to: 'static_pages#home'
 	
 	match '/signup', to: 'users#new'
-	match '/zip/:zip_code', to: 'plans#filter_by_zip'
+	match '/zip/:zip_code', to: 'plans#index'
 	
 	match '/preferences', to: 'static_pages#preferences'
-	
+	match '/congrats', to: 'static_pages#congrats'
 	match '/about', to: 'static_pages#about'
 	match '/contact', to: 'static_pages#contact'
 
